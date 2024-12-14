@@ -1,0 +1,29 @@
+
+
+#SelectionArea{
+    display: inline;
+}
+#Continue{
+    display: inline;
+}
+#Results{
+    display: none;
+}
+img{
+    height: 50px;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+tr,td,th{
+    border: 2px solid black;
+    padding: 5px;
+}
+#ItemSelectedByOpponent,#ItemSelectedByUser{
+    display: none;
+}
+
+#UserSelect{
+    visibility: hidden;
+}

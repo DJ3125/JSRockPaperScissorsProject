@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Game</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="Title"> The Rock Paper Scissors Game </h1>
+<p id="AskWho">Please Enter in Your Opponent's Name</p>
+<input type="text" id="Box">
+<div id="OpponentSelect">
+    <p id="ThingSelected"></p>
+    <img id="ItemSelectedByOpponent">
+</div>
+<br>
+<div id="UserSelect">
+    <img id="ItemSelectedByUser">
+    <p id="UserSelected"></p>
+    <div id="SelectionArea">
+        <p id="DisplayInstructions"> Please Select An Option </p>
+        <table id="Select">
+            <tr>
+                <th> <img class='Images' src="Pictures/Rock.jpg" id="RockImage"> </th>
+                <th> <img class='Images' src="Pictures/Paper.jpg" id="PaperImage"> </th>
+                <th> <img class='Images' src="Pictures/Scissor.jpg" id="ScissorImage"> </th>
+            </tr>
+            <tr>
+                <td> <button type='button' id="RockButton" onclick="ItemSelect('Rock')"> Rock </button> </td>
+                <td> <button type='button' id="PaperButton" onclick="ItemSelect('Paper')"> Paper </button> </td>
+                <td> <button type="button" id="ScissorButton" onclick="ItemSelect('Scissor')"> Scissor </button> </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<h2 id="Results"></h2>
+<button type="button" id="Continue" onclick="Continue()"> Continue </button>
+<hr>
+<table id="Scores">
+    <tr>
+        <th> Wins </th>
+        <th> Losses </th>
+        <th> Ties </th>
+        <th> Percent Won </th>
+    </tr>
+    <tr>
+        <td id="Wins"> 0 </td>
+        <td id="Losses"> 0 </td>
+        <td id="Ties"> 0 </td>
+        <td id="Percentage"> 0% </td>
+    </tr>
+</table>
+</body>
+</html>
